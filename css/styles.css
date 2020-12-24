@@ -1,0 +1,232 @@
+/* TAG SELECTOR */
+body {
+  color: #40514E;
+  margin: 0;
+  /* align everything in the body to center that doesn't have a width set */
+  text-align: center; 
+  /* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif */
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+        /* T   R    B  L */
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem; /* 16px = 100% = 1em, 90px  = 90/16 x 100 = 562.5% or 5.625em .  Note this gets inherited if you specify this in the body in % or em. hence use the rem to avoid this issue*/
+  color: #66BFBF;
+  /* line-height: 2; */
+  /* width: 10%; */
+  /*   top left bottom right */
+  /* setting margin to auto will center the element horizontally or vertically */
+  /* margin: 0 auto 0 auto; */
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+  color: #66BFBF;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+p {
+  line-height: 2; /* makes the paragraph text spaced out */
+}
+
+hr {
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto 100px auto;
+}
+
+a {
+  color: #11999E;
+  margin: 10px 20px 10px 20px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a:hover {
+  color: #EAF6F6;
+}
+
+/* CLASS SELECTOR */
+.top-container {
+  background-color: #E4F9F5;
+  position: relative;
+  padding-top: 100px;
+  /* border: solid 10px;
+  height: 200px;
+  width: 200px; */
+}
+
+.middle-container {
+  margin: 100px 0 100px 0;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.intro {
+  width: 30%;
+  margin: auto; /* makes it center */
+}
+
+.contact-message {
+  width: 40%;
+  margin: 40px auto 40px auto;
+}
+
+.copyright {
+  color: #EAF6F6;
+  /* 75% */
+  font-size: 0.75rem;
+  /* 20px top and bottom and 0px left and right */
+  padding: 20px 0px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+
+.profile img {
+  border-radius: 50%;
+  width: 20%;
+}
+
+.skill-row {
+  width: 50%;
+  /* want to center the contents */
+          /* T   L    B     R */
+  margin: 80px auto 80px auto;
+  text-align: left;
+}
+
+.code-img {
+  border-radius: 50%;
+  width: 15%;
+  float: left;
+  margin-right: 30px; /*puts a space between image and text */
+}
+
+.code-img:hover {
+  width: 17%;
+}
+
+.restaurant-img {
+  border-radius: 50%;
+  width: 15%;
+  float: right;
+  margin-left: 30px; /*puts a space between image and text */
+}
+
+.restaurant-img:hover {
+  width: 17%;
+}
+
+
+
+.bottom-container {
+  background-color: #66BFBF;
+        /* Top  LR  bottom (needed for the paragraph tag bottom margin taken) */
+  padding: 50px 0 20px;
+}
+
+.btn {
+  background: #11CDD4;
+  background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -ms-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -o-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -webkit-gradient(to bottom, #11CDD4, #11999E);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  height: 50px;
+  line-height: 50px;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  width: 200px;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 0;
+  border: solid #337FED 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  border: solid #66BFBF 1px;
+  background: #30E3CB;
+  background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -moz-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -ms-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -webkit-gradient(to bottom, #30E3CB, #2BC4AD);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* clears text from floating to the left */
+  /* prevents the text from wrapping around the left floating image  */
+/* .code-skill-description {
+  clear: left;
+} */
+
+/* .eating-skill-description {
+  clear: right;
+} */
+/* .skill-row > h3 {
+  text-align: left;
+}
+
+.skill-row > p {
+  text-align: left;
+} */
+
+
+.disappear-first {
+  background-color: green;
+  height: 200px;
+  width: 200px;
+  /* display: none; hides the html content making it look like it never existed */
+  position: relative; /* the default is static */
+  /* setting the position property to relative, you want it to move to the element away
+  from it's original position if it was static. For example, you can move away from the top,
+  bottom, left or right. In the below, I changed the top and left position */
+  left: 40px; /* move content to the left by 20px */
+  top: 50px;
+}
+
+.disappear-second {
+  /*visibility: hidden;  /* hides the html content but keeps space for the position of that element*/
+  background-color: brown;
+  height: 200px;
+  width: 200px;
+  display: inline-block; /* hides the html content making it look like it never existed */
+  position: relative; /* the default is static*/
+  /* setting the position property to relative, you want it to move to the element away
+  from it's original position if it was static. For example, you can move away from the top,
+  bottom, left or right. In the below, I changed the top and left position */
+  top: 20px;  /* move content down 20px */
+}
